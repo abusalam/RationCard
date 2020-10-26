@@ -17,6 +17,7 @@ class Cards extends ResourceController
 
     public function index()
     {
+        $this->response->setHeader('Access-Control-Allow-Origin', '*');
         return $this->respond($this->model->findAll());
     }
 
