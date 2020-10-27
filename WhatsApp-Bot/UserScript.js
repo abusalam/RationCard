@@ -1,13 +1,13 @@
 // ==UserScript==
 // @name         WhatsApp-Web-Bot
 // @namespace    https://github.com/abusalam
-// @version      0.0.78
+// @version      0.0.1
 // @description  Get Ration Card Info
 // @author       Abu Salam Parvez Alam
 // @match        https://web.whatsapp.com/
 // @grant        none
-// @downloadURL https://github.com/abusalam/UserScripts/raw/master/COVID-19-WhatsApp-WebBot.user.js
-// @updateURL   https://github.com/abusalam/UserScripts/raw/master/COVID-19-WhatsApp-WebBot.user.js
+// @downloadURL https://github.com/abusalam/RationCard/raw/master/WhatsApp-Bot/UserScript.js
+// @updateURL   https://github.com/abusalam/RationCard/raw/master/WhatsApp-Bot/UserScript.js
 // @icon        http://www.gravatar.com/avatar/43f0ea57b814fbdcb3793ca3e76971cf
 // ==/UserScript==
 
@@ -19,7 +19,7 @@ function jQueryInclude(callback) {
     var UserScript = document.createElement('script');
     UserScript.textContent = 'window.jQ=jQuery.noConflict(true);'
       + 'var BaseURL = "https://cards.maldazilla.in/";'
-      + 'var Version = "v0.0.78";'
+      + 'var Version = "v0.0.1";'
       + '(' + callback.toString() + ')();';
     document.body.appendChild(UserScript);
   }, false);
