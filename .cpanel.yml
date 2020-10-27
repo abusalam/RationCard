@@ -1,0 +1,4 @@
+---
+deployment:
+ tasks:
+  - git --work-tree=../../cards checkout -f master
