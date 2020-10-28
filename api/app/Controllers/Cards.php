@@ -17,6 +17,12 @@ class Cards extends ResourceController
 
     public function index()
     {
+        // $options = [
+        //     'max-age'  => 600,
+        // ];
+        // $this->response->setCache($options);
+        $this->response->setHeader('Cache-Control', 'private')
+                    ->appendHeader('Cache-Control', 'max-age=600');
         $this->response->setHeader('Access-Control-Allow-Origin', '*');
         return $this->respond($this->model->findAll());
     }
